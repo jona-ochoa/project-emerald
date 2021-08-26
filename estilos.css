@@ -1,0 +1,144 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Roboto', sans-serif; 
+    list-style: none;    
+}
+
+body {
+    background: #111111;
+}
+
+h1 {
+    padding: 5px;
+    width: auto;
+    height: 120px;   
+    text-align: center;
+    color: #57c64f ;
+    font-size: 60px;    
+}
+    
+h5{
+    padding: 0px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+}
+span {
+    color: white;
+}
+
+form {
+    margin: 0 auto;
+    padding: auto;
+    width: 400px;
+    height: 40px;
+}
+
+.controls {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: #908bb1;
+    border: none;
+}
+
+.buttons {
+    margin: 0% auto;
+    padding: 10px 10px; 
+    display: block;
+    width: 120px;
+    text-align: center; 
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+.buttons:hover {
+    background-color: #57c64f;
+    color: white;
+    transition: all 0.3s ease 0s; 
+}
+
+div#footer{
+    margin-top: 180px;
+}
+li, a {
+    color: white;
+    
+}
+
+li, a, button {
+    font-weight: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    text-decoration: #57c64f;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 35px;
+    background-color: white;
+    margin-bottom: 10px;   
+}
+
+.logo {
+    margin: 0px auto;
+    width: 5%;
+    height: 5%px;
+   
+}
+
+.nav_links {   
+    margin-top: 5px;
+}
+
+.nav_links li {
+    margin: 10px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;   
+}
+
+.nav_links li a:hover {
+    text-decoration: underline;
+}
+ 
+nav ul {
+    float: right;
+    margin-right: 250px;
+    display: flex;
+    list-style: none;
+    font-size: 35px;
+    padding-bottom: 2px;
+}
+
+button {
+    margin-left: 20px ;
+    padding: 9px 25px;
+    background-color: #57c64f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration-color: white;
+}
+button:hover {
+    background-color: #111111;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: #57c64f;   
+}

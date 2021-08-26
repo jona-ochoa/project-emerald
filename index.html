@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>proyecto Emerald</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagen/logo-emerald.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home </a></li>
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">Setting </a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact Us</button></a>
+    </header>
+    <div class="content">
+        <div class="contenedor">
+            <h1>Emerald <span>Project </span></h1>
+            <h5>Complite this form to join us!</h5>
+        </div>
+
+            <form action="form">
+
+                <input class="controls" type="text" name="name" placeholder="Name:" ><br>
+
+                <input class="controls" type="email" name="email" placeholder="Email:" required><br>
+    
+                <input class="buttons" type="submit" value="Submit"  onclick=" return alerta()" >
+   
+            </form> 
+    </div>
+
+    <div id="footer">
+        <img src="imagen/imagen-emerald.png" alt="">
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
