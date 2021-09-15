@@ -14,11 +14,12 @@ function Helloword(props){
 function App() {
   return (
     <div> 
-      This is my component: 
-      <Helloword mytext="Hola Jona" subtitle="loremp ispum"/>
-      <Helloword mytext="Hola word" subtitle="loremp ispum"/>
-      <Helloword mytext="Hola Amigos" subtitle="loremp ispum"/>
-      <Helloword mytext="Hola mundo" subtitle="loremp ispum"/>
+      <h1 id="uno">Mi primera App con React</h1> 
+      <Helloword mytext="Hola Jona" subtitle="Loremp ispum"/>
+      <Helloword mytext="Hola Tobias" subtitle="Loremp ispum"/>
+      <Helloword mytext="Hola Franco" subtitle="Loremp ispum"/>
+      <Helloword mytext="Hola Marcelo" subtitle="Loremp ispum"/>
+      <Helloword mytext="Hola Tata" subtitle="oremp ispum"/>
     </div>
   );
 }
