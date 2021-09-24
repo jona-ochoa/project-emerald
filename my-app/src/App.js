@@ -1,26 +1,20 @@
-
-import './App.css';
-function Helloword(props){
-  return(
-    <div id="hello">
-      <h3>{props.subtitle}</h3>
-      {props.mytext}
-      </div>
-  )
-}
+import React from'react';
+import GlobalStyle from './globalStyles';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
+import  Home  from './pages/HomePages/Home';
+import { Navbar } from './components';
 
 
 
 function App() {
-  return (
-    <div> 
-      <h1 id="uno">Mi primera App con React</h1> 
-      <Helloword mytext="Hola Jona" subtitle="Loremp ispum"/>
-      <Helloword mytext="Hola Tobias" subtitle="Loremp ispum"/>
-      <Helloword mytext="Hola Franco" subtitle="Loremp ispum"/>
-      <Helloword mytext="Hola Marcelo" subtitle="Loremp ispum"/>
-      <Helloword mytext="Hola Tata" subtitle="oremp ispum"/>
-    </div>
+  return(
+    <Router>
+      <GlobalStyle />
+       <Navbar />
+       <Switch />
+       <Route path="/" exact component ={Home} />
+    </Router>
+    
   );
 }
 
