@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container } from "../../globalStyles";
+import { Button } from "../Navbar/Navbar.elements";
 
 import {
   InfoSec,
@@ -14,9 +16,11 @@ import {
 } from "./InfoSection.elements";
 
 const InfoSection = ({
+  primary,
   lightBg,
   imgStart,
   lightTextDesc,
+  buttonLabel,
   lightTopLine,
   headline,
   description,
@@ -36,6 +40,11 @@ const InfoSection = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                <Link to= '/Contact-us'>
+                <Button big fontBig primary={primary}>
+                  {buttonLabel}
+                </Button>
+                </Link>
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>

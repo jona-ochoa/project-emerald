@@ -34,14 +34,14 @@ export const NavLogo = styled(Link)`
   line-height: 27px;
   display: flex;
   align-items: center;
-  margin-left: 15px;
+  
 
   span {
     color: #66e2af;
   }
 
   p {
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1003px) {
       display: none;
     }
   }
@@ -56,13 +56,13 @@ export const NavIcon = styled.img`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1003px) {
     display: block;
     position: absolute;
-    top: 0;
+    top: -20px;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     cursor: pointer;
     color: #ffffff;
   }
@@ -75,7 +75,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   
 
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1003px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -85,7 +85,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #46c38a;
+    background: #2F2E41;
   }
 `;
 
@@ -97,7 +97,7 @@ export const NavItem = styled.li`
     border-bottom: 5px solid #66e2af;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1003px) {
     width: 100%;
 
     &:hover {
@@ -122,23 +122,24 @@ export const NavLinks = styled(Link)`
       transition: all 0.5s ease;
     }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1003px) {
     text-align: center;
-    color: #000000;
+    color: #fff;
     padding: 2rem;
     width: 100%;
     display: table;
-    font-weight: bold 700;
+    font-weight: 400 ;
 
     &:hover {
-      color: #ffffff;
+      color: #66E2AF;
       transition: all 0.5s ease;
+      font-weight: bold;
     }
   }
 `;
 
 export const NavItemBtn = styled.li`
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1003px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +155,7 @@ export const NavBtnLink = styled(Link)`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 8px 16px;
+  
   height: 100%;
   width: 100%;
   border: none;
@@ -184,7 +185,7 @@ cursor: pointer;
     color: #ffffff;
 }
 
-@media screen and (max-width: 960px){
-    width: 100%;
+@media screen and (max-width: 1003px){
+  width: 50%;
 }
 `;
