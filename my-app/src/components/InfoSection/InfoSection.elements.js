@@ -2,32 +2,41 @@ import styled from "styled-components";
 
 export const InfoSec = styled.div`
   color: #fff;
-  padding: 60px 0;
+  padding: 80px 0;
   background: ${({ lightBg }) => (lightBg ? "#2F2E41" : "#fff")};
+
+  
 `;
 
 export const InfoRow = styled.div`
   display: flex;
-  margin: 15px 15px 15px 15px;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+
+  @media screen and (max-width:960px) {
+    flex-direction: column;
+    
+  }
 `;
 
 export const InfoColumn = styled.div`
-  margin-bottom: 15px;
-  padding-left: 30px;
+  margin-bottom: 25px;
+  
   padding-right: 15px;
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;
 
-  @media screen and (maw-width: 800px) {
+  @media screen and (maw-width: 768px) {
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    
   }
+  
 `;
 
 export const TextWrapper = styled.div`
@@ -44,7 +53,7 @@ export const TopLine = styled.div`
   color: ${({ ligthTopLine }) => (ligthTopLine ? "#FF6" : "#FF6584")};
   font-size: 18px;
   line-height: 16px;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   
 `;
 
@@ -83,3 +92,4 @@ export const Img = styled.img`
 
 
 `;
+
